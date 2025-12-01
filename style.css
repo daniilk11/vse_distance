@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0; 
+    text-align: center;
+}
+
+header, main {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main section {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+button {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #23f666;
+    background: #25e863; 
+    color: #fff; 
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.coords-row {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.coord-card, .distance-card {
+    flex: 1 1;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    padding: 0.75rem;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vzdálenost od VŠE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Jak daleko jsem od VŠE?</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="action-heading">
+            <h2 id="action-heading">Výpočet vzdálenosti</h2>
+            <p id="status" role="status" aria-live="polite"></p>
+
+            <div class="results" aria-live="polite">
+                <div class="coords-row">
+                    <div class="coord-card">
+                        <h3>Tvoje poloha</h3>
+                        <p id="userCoords">–</p>
+                    </div>
+                    <div class="coord-card">
+                        <h3>VŠE (Žižkov)</h3>
+                        <p id="vseCoords">50.080000, 14.440000</p>
+                    </div>
+                </div>
+
+                <div class="distance-card">
+                    <h3>Vzdálenost od VŠE</h3>
+                    <p id="distance">–</p>
+                </div>
+                <button id="locateButton" type="button">
+                    Zjistit moji polohu a spočítat vzdálenost
+                </button>
+            </div>
+        </section>
+        <section>
+            <p>
+                Geolokace používá HTML5 Geolocation API. Pokud odmítneš sdílet polohu
+                nebo ji prohlížeč nepodporuje, vzdálenost nelze spočítat.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
